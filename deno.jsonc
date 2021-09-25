@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "checkJs": false,
+        "experimentalDecorators": true,
+        "jsx": "react",
+        "jsxFactory": "React.createElement",
+        "jsxFragmentFactory": "React.Fragment",
+        "keyofStringsOnly": false,
+        "lib": ["deno.window"],
+        "noFallthroughCasesInSwitch": true, // default:false
+        "noImplicitAny": true,
+        "noImplicitReturns": true, // default:false
+        "noImplicitThis": true,
+        // "noImplicitUseStrict": true,
+        "noStrictGenericChecks": true, // default:false
+        "noUnusedLocals": true, // default:false
+        "noUnusedParameters": true, // default:false
+        "noUncheckedIndexedAccess": true, // default:false
+        // "reactNamespace": "React",
+        "strict": true,
+        "strictBindCallApply": true,
+        "strictFunctionTypes": true,
+        "strictPropertyInitialization": true,
+        "strictNullChecks": true,
+        "suppressExcessPropertyErrors": true, // default:false
+        "suppressImplicitAnyIndexErrors": true // default:false
+    },
+    "lint": {
+        "files": {
+            "include": ["src/"],
+            "exclude": ["src/testdata/"]
+        },
+        "rules": {
+            "tags": ["recommended"],
+            "include": ["ban-untagged-todo"],
+            "exclude": ["no-unused-vars"]
+        }
+    },
+    "fmt": {
+        "files": {
+            "include": ["src/"],
+            "exclude": ["src/testdata/"]
+        },
+        "options": {
+            "useTabs": true,
+            "lineWidth": 80,
+            "indentWidth": 4,
+            "singleQuote": true,
+            "proseWrap": "preserve"
+        }
+    }
+}
