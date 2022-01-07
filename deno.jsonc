@@ -8,18 +8,18 @@
         "jsx": "react",
         "jsxFactory": "React.createElement",
         "jsxFragmentFactory": "React.Fragment",
+        "jsxImportSource": "react",
         "keyofStringsOnly": false,
         "lib": ["deno.window"],
         "noFallthroughCasesInSwitch": true, // default:false
         "noImplicitAny": true,
         "noImplicitReturns": true, // default:false
         "noImplicitThis": true,
-        // "noImplicitUseStrict": true,
+        "noImplicitUseStrict": true,
         "noStrictGenericChecks": true, // default:false
         "noUnusedLocals": true, // default:false
         "noUnusedParameters": true, // default:false
         "noUncheckedIndexedAccess": true, // default:false
-        // "reactNamespace": "React",
         "strict": true,
         "strictBindCallApply": true,
         "strictFunctionTypes": true,
@@ -35,8 +35,8 @@
         },
         "rules": {
             "tags": ["recommended"],
-            "include": ["ban-untagged-todo"],
-            "exclude": ["no-unused-vars"]
+            "exclude": ["no-unused-vars"],
+            "include": ["ban-untagged-todo"]
         }
     },
     "fmt": {
@@ -45,11 +45,11 @@
             "exclude": ["src/testdata/"]
         },
         "options": {
-            "useTabs": true,
-            "lineWidth": 80,
-            "indentWidth": 4,
-            "singleQuote": true,
-            "proseWrap": "preserve"
+            "useTabs": false, // default:true,
+            "lineWidth": 120, // default:80
+            "indentWidth": 4, // default:2
+            "singleQuote": false,
+            "proseWrap": "preserve" // default:"always"
         }
     }
 }
